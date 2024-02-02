@@ -6,7 +6,7 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>FocusTimer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,12 +17,31 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-<video src="backgrounds/chill-mario-pixel-moewalls-com.mp4"></video>
+    <video
+      src="backgrounds/rainy-waterfall-pixel-desktop-wallpaperwaifu-com.mp4"
+      autoplay
+      muted
+      loop
+    ></video>
 
-    <div id="lightMode">
-      <button><i class="ph ph-moon"></i></button>
-      <button><i class="ph ph-sun"></i></button>
+    <div id="temas">
+        <h1>Temas</h1>
+
+      <section id="controlsTemas" class="">
+      <div id="btnTemas" >
+      <button class=""><i class="ph ph-game-controller"></i></button>
+      <button class="" style="--delay:.6s"><i class="ph ph-umbrella"></i></button>
+      <button class="" style="--delay:.8s"><i class="ph ph-fish"></i></button>
+      <button class="" style="--delay: 1s"><i class="ph ph-buildings"></i></button>
+      <button class="" style="--delay: 1.2s"> <i class="ph ph-caret-up"></i></button>
+
+     </div>
+    </section>
+      <button class="hide"> <i class="ph ph-caret-down"></i></button>
+
     </div>
+
+
 
     <div id="app">
       <div id="timer">
@@ -31,16 +50,15 @@
       </div>
 
       <div id="controls">
-          <button class="hide"><i class="hide ph ph-speaker-none"></i></button>
-          <button><i class="ph ph-speaker-high"></i></button>
+        <button class="hide"><i class="hide ph ph-speaker-none"></i></button>
+        <button><i class="ph ph-speaker-high"></i></button>
 
-          <button class="hide"><i class="ph ph-play-circle"></i></button>
-          <button><i class="ph ph-pause-circle"></i></button>
+        <button class="hide"><i class="ph ph-play-circle"></i></button>
+        <button><i class="ph ph-pause-circle"></i></button>
 
-          <button class="hide"><i class="ph ph-timer"></i></button>
-          <button><i class="ph ph-stop-circle"></i></button>
-        </div>
-
+        <button class="hide"><i class="ph ph-timer"></i></button>
+        <button><i class="ph ph-stop-circle"></i></button>
+      </div>
     </div>
   </body>
 </html>
