@@ -1,33 +1,51 @@
-import * as elements from './elements.js'
+import * as el from './elements.js'
 
 
-
+// controle de visibilidade dos btns dos temas
 function VisibilytiControlsTema(){
-    elements.painelControlTemas.classList.toggle('hide')
-    elements.downButtons.classList.toggle('hide')
+    el.painelControlTemas.classList.toggle('hide')
+    el.downButtons.classList.toggle('hide')
+
+}
+el.downButtons.addEventListener("click", VisibilytiControlsTema)
+el.upButtons.addEventListener("click", VisibilytiControlsTema)
+
+function removeClass(){
+    el.HTML.classList.remove('mario')
+    el.HTML.classList.remove('predios')
+    el.HTML.classList.remove('peixes')
+    el.HTML.classList.remove('chuva')
+
 }
 
-elements.downButtons.addEventListener("click", VisibilytiControlsTema)
-elements.upButtons.addEventListener("click", VisibilytiControlsTema)
-
-
+//mudança de temas
 function TemaMario(){
-elements.background.src = 'backgrounds/chill-mario-pixel-moewalls-com.mp4'
+el.background.src = 'backgrounds/chill-mario-pixel-moewalls-com.mp4'
+removeClass()
+el.HTML.classList.add('mario')
+
 }
-elements.btnMario.addEventListener('click' , TemaMario)
+el.btnMario.addEventListener('click' , TemaMario)
 
 function TemaPeixes(){
-    elements.background.src = "backgrounds/koi-fish-pond-pixel-moewalls-com.mp4"
+    el.background.src = "backgrounds/koi-fish-pond-pixel-moewalls-com.mp4"
+    removeClass()
+el.HTML.classList.add('peixes')
 }
-elements.btnPeixes.addEventListener('click' , TemaPeixes)
+el.btnPeixes.addEventListener('click' , TemaPeixes)
 
 function TemaPredios(){
-    elements.background.src = "backgrounds/bg-day.mp4"
+    el.background.src = "backgrounds/bg-day.mp4"
+    removeClass()
+el.HTML.classList.add('predios')
 }
-elements.btnPredios.addEventListener('click' , TemaPredios)
+el.btnPredios.addEventListener('click' , TemaPredios)
 
 
 function TemaChuva(){
-elements.background.src = 'backgrounds/rainy-waterfall-pixel-desktop-wallpaperwaifu-com.mp4'
+el.background.src = 'backgrounds/rainy-waterfall-pixel-desktop-wallpaperwaifu-com.mp4'
+removeClass()
+el.HTML.classList.add('chuva')
 }
-elements.btnChuva.addEventListener('click' , TemaChuva)
+
+el.btnChuva.addEventListener('click' , TemaChuva)
