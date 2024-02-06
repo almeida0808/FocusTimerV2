@@ -4,6 +4,8 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="JS/main.js" type="module" defer></script>
 
+    <script src="JS/temas.js" type="module" defer></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FocusTimer</title>
@@ -18,7 +20,7 @@
   </head>
   <body>
     <video
-      src="backgrounds/rainy-waterfall-pixel-desktop-wallpaperwaifu-com.mp4"
+      src="backgrounds/bg-day.mp4"
       autoplay
       muted
       loop
@@ -29,10 +31,10 @@
 
       <section id="controlsTemas" class="hide">
       <div id="btnTemas" >
-      <button class=""><i class="ph ph-game-controller"></i></button>
-      <button class="" style="--delay:.6s"><i class="ph ph-umbrella"></i></button>
-      <button class="" style="--delay:.8s"><i class="ph ph-fish"></i></button>
-      <button class="" style="--delay: 1s"><i class="ph ph-buildings"></i></button>
+      <button data-action="TemaMario" class=""><i class="ph ph-game-controller"></i></button>
+      <button data-action="TemeChuva" class="" style="--delay:.6s"><i class="ph ph-umbrella"></i></button>
+      <button data-action="TemaPeixes" class="" style="--delay:.8s"><i class="ph ph-fish"></i></button>
+      <button data-action="TemaPredios" class="" style="--delay: 1s"><i class="ph ph-buildings"></i></button>
       <button class="" style="--delay: 1.2s"> <i class="ph ph-caret-up"></i></button>
   
      </div>
