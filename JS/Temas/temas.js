@@ -1,4 +1,4 @@
-import * as el from './elements.js'
+import * as el from './elementsTema.js'
 
 
 // controle de visibilidade dos btns dos temas

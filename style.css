@@ -68,6 +68,7 @@ body video {
   height: 100%;
   aspect-ratio: 15/9;
   object-fit: cover;
+
 }
 
 #temas {
@@ -86,6 +87,7 @@ body video {
   padding: 0;
   line-height: 2.5rem;
   color: var(--color-btn-temas);
+  transition: 0.3s;
 }
 
 #temas button {
@@ -93,6 +95,7 @@ body video {
   background: none;
   font-size: 3.2rem;
   color: var(--color-btn-temas);
+  transition: 0.3s;
 
   line-height: -1rem;
 }
@@ -133,11 +136,15 @@ body video {
   justify-content: center;
 }
 
-#timer #hours{
-color: var(--color-hours);
-}
 #timer #minutes{
+color: var(--color-hours);
+transition: 0.3s;
+
+}
+#timer #seconds{
     color: var(--color-minutes);
+  transition: 0.3s;
+
 }
 .hide {
   display: none;
@@ -155,6 +162,8 @@ color: var(--color-hours);
   background: none;
   font-size: 4rem;
   color: var(--color-btn-secundary);
+  transition: 0.3s;
+
 }
 
 button {
@@ -168,6 +177,8 @@ button:hover {
 .ph-pause-circle,
 .ph-play-circle {
   color: var(--color-btn-primary);
+  transition: 0.3s;
+
 }
 
 /*ANIMAÇÕES*/

@@ -4,8 +4,6 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="JS/main.js" type="module" defer></script>
 
-    <script src="JS/temas.js" type="module" defer></script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FocusTimer</title>
@@ -19,47 +17,52 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <video
-      src="backgrounds/bg-day.mp4"
-      autoplay
-      muted
-      loop
-    ></video>
+    <video src="backgrounds/bg-day.mp4" autoplay muted loop></video>
 
     <div id="temas">
-        <h1>Temas</h1>
+      <h1>Temas</h1>
 
       <section id="controlsTemas" class="hide">
-      <div id="btnTemas" >
-      <button data-action="TemaMario" class=""><i class="ph ph-game-controller"></i></button>
-      <button data-action="TemeChuva" class="" style="--delay:.6s"><i class="ph ph-umbrella"></i></button>
-      <button data-action="TemaPeixes" class="" style="--delay:.8s"><i class="ph ph-fish"></i></button>
-      <button data-action="TemaPredios" class="" style="--delay: 1s"><i class="ph ph-buildings"></i></button>
-      <button class="" style="--delay: 1.2s"> <i class="ph ph-caret-up"></i></button>
-  
-     </div>
-    </section>
-      <button class=""> <i class="ph ph-caret-down"></i></button>
-
+        <div id="btnTemas">
+          <button data-action="TemaMario" class="">
+            <i class="ph ph-game-controller"></i>
+          </button>
+          <button data-action="TemeChuva" class="" style="--delay: 0.6s">
+            <i class="ph ph-umbrella"></i>
+          </button>
+          <button data-action="TemaPeixes" class="" style="--delay: 0.8s">
+            <i class="ph ph-fish"></i>
+          </button>
+          <button data-action="TemaPredios" class="" style="--delay: 1s">
+            <i class="ph ph-buildings"></i>
+          </button>
+          <button class="" style="--delay: 1.2s">
+            <i class="ph ph-caret-up"></i>
+          </button>
+        </div>
+      </section>
+      <button class=""><i class="ph ph-caret-down"></i></button>
     </div>
-
-
 
     <div id="app">
       <div id="timer">
-        <h1 id="hours">00</h1>
         <h1 id="minutes">00</h1>
+        <h1 id="seconds">00</h1>
       </div>
 
       <div id="controls">
-        <button class="hide"><i class="hide ph ph-speaker-none"></i></button>
-        <button><i class="ph ph-speaker-high"></i></button>
+        <button data-action="toggleMusic" class="hide">
+          <i class="hide ph ph-speaker-none"></i>
+        </button>
+        <button data-action="toggleMusic"><i class="ph ph-speaker-high"></i></button>
 
-        <button class="hide"><i class="ph ph-play-circle"></i></button>
-        <button><i class="ph ph-pause-circle"></i></button>
+        <button data-action="toggleRunning" class="hide">
+          <i class="ph ph-play-circle"></i>
+        </button>
+        <button data-action="toggleRunning"><i class="ph ph-pause-circle"></i></button>
 
-        <button class="hide"><i class="ph ph-timer"></i></button>
-        <button><i class="ph ph-stop-circle"></i></button>
+        <button data-action="set" class="hide"><i class="ph ph-timer"></i></button>
+        <button data-action="reset"><i class="ph ph-stop-circle"></i></button>
       </div>
     </div>
   </body>
