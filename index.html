@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="predios">
+<html lang="en" class="predios  ">
   <head>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <script src="JS/main.js" type="module" defer></script>
@@ -50,20 +50,26 @@
         <h1 id="seconds">00</h1>
       </div>
 
-      <div id="controls">
-        <button data-action="toggleMusic" class="hide">
-          <i class="hide ph ph-speaker-none"></i>
+      <section id="controls">
+        <button class="speaker-none">
+          <i data-action="toggleMusic" class=" ph ph-speaker-none"></i>
         </button>
-        <button data-action="toggleMusic"><i class="ph ph-speaker-high"></i></button>
-
-        <button data-action="toggleRunning" class="hide">
-          <i class="ph ph-play-circle"></i>
+        <button class="speaker-high">
+          <i data-action="toggleMusic" class="ph ph-speaker-high"></i>
         </button>
-        <button data-action="toggleRunning"><i class="ph ph-pause-circle"></i></button>
 
-        <button data-action="set" class="hide"><i class="ph ph-timer"></i></button>
-        <button data-action="reset"><i class="ph ph-stop-circle"></i></button>
-      </div>
+        <button class="play">
+          <i data-action="toggleRunning" class="ph ph-play-circle"></i>
+        </button>
+        <button class="pause">
+          <i data-action="toggleRunning" class="ph ph-pause-circle"></i>
+        </button>
+
+        <button class="timer">
+          <i data-action="set" class="ph ph-timer"></i>
+        </button>
+        <button class="reset"><i data-action="reset" class="ph ph-stop-circle"></i></button>
+      </section>
     </div>
   </body>
 </html>

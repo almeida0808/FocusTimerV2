@@ -175,7 +175,8 @@ button:hover {
 }
 
 .ph-pause-circle,
-.ph-play-circle {
+.ph-play-circle, .ph-speaker-high {
+  
   color: var(--color-btn-primary);
   transition: 0.3s;
 
@@ -190,4 +191,11 @@ button:hover {
   50% {
     transform: scale(1.2);
   }
+}
+
+
+html.running .play, html:not(.running) .pause,
+html.musicOn .speaker-none, html:not(.musicOn) .speaker-high,
+html.running .timer, html:not(.running) .reset{
+  display: none;
 }
