@@ -118,9 +118,9 @@ body video {
 
 #app {
   padding: 3rem;
-  margin: 0 auto;
   height: max-content;
   width: max-content;
+
 
   background: rgba(206, 202, 202, 0.25);
   box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
@@ -132,19 +132,23 @@ body video {
 
 #timer {
   line-height: 9rem;
-  font-size: 9rem;
-  justify-content: center;
+  text-align: center;
+  display: grid;
+justify-content: center;
 }
+
 
 #timer #minutes{
+  font-size: 18rem;
+
 color: var(--color-hours);
 transition: 0.3s;
-
 }
 #timer #seconds{
+  font-size: 18rem;
+  
     color: var(--color-minutes);
   transition: 0.3s;
-
 }
 .hide {
   display: none;
