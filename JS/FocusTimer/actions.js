@@ -7,12 +7,14 @@ state.isRunning =  el.HTML.classList.toggle('running')
 timer.contagemRegressiva()
 }
 export function set(){
-    console.log(  'sou o set')
+el.minutes.setAttribute('contenteditable', true)
+el.minutes.focus()
 }
 
 export function reset(){
     state.isRunning = false
 el.HTML.classList.remove('running')
+timer.updatedisplay()
 }
 export function toggleMusic(){
 

@@ -10,3 +10,4 @@ timer.updatedisplay()
 }
 
 events.registerControls()
+events.setMinutes()

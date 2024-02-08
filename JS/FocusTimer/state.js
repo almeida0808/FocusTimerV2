@@ -1,6 +1,6 @@
 export default {
-    minutes : 21,
-    seconds : 10,
+    minutes :1 ,
+    seconds : 3,
     isRunning: false,
     musicOn: false,
 

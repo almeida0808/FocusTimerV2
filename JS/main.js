@@ -1,4 +1,4 @@
 import "./Temas/temas.js" 
 import * as FocusTimer from "./FocusTimer/index.js"
 
-FocusTimer.start(0,10)
+FocusTimer.start(0,2)
