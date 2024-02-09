@@ -1,8 +1,11 @@
 import state from "./state.js";
 import * as el from "./elementsFT.js";
-import * as actions from "./actions.js"
+import * as actions from "./actions.js";
+import * as sounds from "./sounds.js";
 
 export function contagemRegressiva() {
+
+  clearTimeout(state.contagemRegressiva)
   if (!state.isRunning) {
     return;
   }
@@ -10,25 +13,25 @@ export function contagemRegressiva() {
   let minutes = Number(el.minutes.textContent);
   let seconds = Number(el.seconds.textContent);
 
-  seconds--
+  seconds--;
 
-if(seconds < 0){
-   seconds = 59
-   minutes--
-   
-}
+  if (seconds < 0) {
+    seconds = 59;
+    minutes--;
+  }
 
-if(minutes < 0){
-   actions.reset()
-   return
-}
+  if (minutes < 0) {
+    actions.reset();
+   console.log(state.tema)
+   sounds.removeMusic()
+   sounds.alarmeTema()
+    return;
 
+  }
 
   updatedisplay(minutes, seconds);
 
-
-
-  setTimeout(() => contagemRegressiva(), 1000);
+  state.contagemRegressiva = setTimeout(() => contagemRegressiva(), 1000);
 }
 
 export function updatedisplay(minutes, seconds) {

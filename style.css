@@ -112,6 +112,11 @@ body video {
   animation: aparecer 0.4s var(--delay) backwards;
 }
 
+button img{
+  width: 3.2rem;
+  filter: brightness(200);
+  color: white;
+}
 .hide {
   display: none;
 }

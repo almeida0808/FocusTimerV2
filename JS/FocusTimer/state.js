@@ -1,7 +1,8 @@
 export default {
-    minutes :1 ,
-    seconds : 3,
+    minutes :5 ,
+    seconds : 0,
     isRunning: false,
     musicOn: false,
-
+    contagemRegressiva: null,
+    tema: "predios",
 }
