@@ -1,6 +1,7 @@
 import * as el from "./elementsTema.js";
 import state from "../FocusTimer/state.js";
 import * as sounds from "../FocusTimer/sounds.js";
+import { reset } from "../FocusTimer/actions.js";
 // controle de visibilidade dos btns dos temas
 function VisibilytiControlsTema() {
   el.painelControlTemas.classList.toggle("hide");
@@ -15,6 +16,7 @@ function removeClass() {
   el.HTML.classList.remove("peixes");
   el.HTML.classList.remove("chuva");
   sounds.removeMusic();
+  reset()
 }
 
 //mudança de temas
