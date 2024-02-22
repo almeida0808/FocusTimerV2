@@ -5,7 +5,6 @@ Site desenvolvido por <a href="https://www.linkedin.com/in/almeida08/">Lucas Alm
 
 </p>
 
-https://github.com/almeida0808/FocusTimerV2/assets/144072612/f8c26248-7d5a-4809-a8ff-940942e90f7c
 
 
 <p align="center">
@@ -18,11 +17,10 @@ https://github.com/almeida0808/FocusTimerV2/assets/144072612/f8c26248-7d5a-4809-
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </p>
 
-<br>
+https://github.com/almeida0808/FocusTimerV2/assets/144072612/f8c26248-7d5a-4809-a8ff-940942e90f7c
 
-<p align="center">
-  <img alt="projeto DevLinks" src=".github/capa-biscoito.png" width="100%">
-</p>
+
+<br>
 
 ## 🚀 Tecnologias
 
