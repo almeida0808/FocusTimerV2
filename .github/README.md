@@ -5,7 +5,7 @@ Site desenvolvido por <a href="https://www.linkedin.com/in/almeida08/">Lucas Alm
 
 </p>
 
-C:\Users\lucasao.CONDUPASQUA\Desktop\FocusTimerV2\.github\apresentacao-projeto.mp4
+https://github.com/almeida0808/FocusTimerV2/assets/144072612/f8c26248-7d5a-4809-a8ff-940942e90f7c
 
 
 <p align="center">
